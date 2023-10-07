@@ -122,10 +122,7 @@ export class TelegramBotService {
   }
 
   private async sendWeatherUpdate(chatId: number) {
-    // This function sends a weather update to a specific user (chatId)
-    // Replace with your weather API endpoint and API key
-    // const WEATHER_API_KEY = '3afaf6d8497970c3796e7353691b1f4a';
-    // const CITY = 'Lucknow';
+
     const apiKey = this.adminService.getApiKey();
     console.log(apiKey);
     
