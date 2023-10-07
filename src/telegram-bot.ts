@@ -66,6 +66,7 @@ export class TelegramBotService {
         if (user) {
           this.bot.sendMessage(chatId, 'You have been registered.');
           this.subscribedUsers.add(chatId);
+          this.sendWeatherUpdate(chatId);
         } else {
           this.bot.sendMessage(chatId, 'Registration failed. Please try again.');
         }
